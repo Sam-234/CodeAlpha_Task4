@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha Task 4 - Cinematic Docker</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e1b4b, #311042);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            color: #fff;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px 60px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            animation: floatIn 1.5s ease-out forwards;
+            transform: translateY(30px);
+            opacity: 0;
+        }
+        @keyframes floatIn {
+            to { transform: translateY(0); opacity: 1; }
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 2px rgba(56, 189, 248, 0.5)); }
+            to { filter: drop-shadow(0 0 15px rgba(192, 132, 252, 0.8)); }
+        }
+        p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            margin-top: 10px;
+        }
+        .badge {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 16px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid #38bdf8;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #38bdf8;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>CodeAlpha DevOps</h1>
+        <h2>Task 4: Web Server using Docker</h2>
+        <p>Successfully Containerized & Running inside Docker</p>
+        <div class="badge">⚡ Powered by Nginx & Docker</div>
+    </div>
+</body>
+</html>
